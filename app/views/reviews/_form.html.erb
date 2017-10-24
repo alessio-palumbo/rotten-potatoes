@@ -1,27 +1,28 @@
-<%= form_with(model: [@movie, review], local: true) do |form| %>
-  <% if review.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(review.errors.count, "error") %> prohibited this review from being saved:</h2>
+<section class="review_form">
+  <%= form_with(model: [@movie, review], local: true) do |form| %>
+    <% if review.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(review.errors.count, "error") %> prohibited this review from being saved:</h2>
 
-      <ul>
-      <% review.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+        <ul>
+        <% review.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= form.text_area :comment, id: :review_comment, placeholder: 'What did you think about this movie?' %>
+    </div>
+
+    <div class="field">
+      <%= form.number_field :rating, id: :review_rating, placeholder: 'Rating' %>
+    </div>
+
+    <div class="actions">
+      <%= form.submit %><br>
+      <%= link_to 'Back', movies_path, class: 'btn' %>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= form.label :rating %>
-    <%= form.number_field :rating, id: :review_rating %>
-  </div>
-
-  <div class="field">
-    <%= form.label :comment %>
-    <%= form.text_area :comment, id: :review_comment %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>
+</section>

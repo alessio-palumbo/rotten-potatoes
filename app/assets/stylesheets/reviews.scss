@@ -52,3 +52,61 @@ section.reviews {
 
   }
 }
+
+section.review_form {
+  margin-top: 10px !important;
+
+  form {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    div.field {
+      input[type=number] {
+        padding: 10px !important;
+        height: 35px;
+        width: 100%;
+        border: 0;
+        border-radius: 15px;
+
+        outline: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+      }
+
+      textarea {
+        padding: 10px !important;
+        height: 200px;
+        width: 100%;
+        border: 0;
+        border-radius: 15px;
+        resize: vertical;
+
+        outline: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+      }
+    }
+
+    div.actions {
+      margin-top: 10px !important;
+      text-align: center;
+      
+      input[type=submit], a {
+        background: #828282;
+        color: #F2F2F2;
+        line-height: 14px;
+        font-size: 14px;
+        font-weight: bold;
+        border: 0;
+        border-radius: 15px;
+        min-width: 150px !important;
+        height: 35px;
+        padding: 10px !important;
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+        // margin-right: 10px !important; 
+      }
+    }
+  }
+}
