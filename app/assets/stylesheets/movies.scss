@@ -14,6 +14,51 @@ section.header_movies {
   }
 }
 
+// <section class="search">
+// <div class="search align-self-center ">
+//   <%= form_tag(@movie, method: "get") do %>
+//     <%= text_field_tag :search, params[:search], placeholder: "Search movie" %>
+//     <%= submit_tag "Search" %>
+//   <% end %>
+// </div>
+// </section>
+
+section.search {
+  div.search_bar {
+    form {
+      height: 35px;
+      margin-bottom: 10px !important;
+
+      input[type=text] {
+        padding: 10px !important;
+        margin-right: 10px !important;
+        height: 35px;
+        width: 50%;
+        border: 0;
+        border-radius: 15px;
+        outline: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+      }
+      input[type=submit] {
+        background: #828282;
+        color: #F2F2F2;
+        line-height: 14px;
+        font-size: 14px;
+        font-weight: bold;
+        border: 0;
+        border-radius: 15px;
+        min-width: 150px !important;
+        height: 35px;
+        padding: 10px !important;
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+      }
+    }
+  }
+}
+
 section.movies {
   div.movies_section_title {
     height: 50px;

@@ -1,11 +1,11 @@
-
-<div class="search align-self-center ">
-  <%= form_tag(@movie, method: "get") do %>
-    <%= text_field_tag :search, params[:search], placeholder: "Search movie" %>
-    <%= submit_tag "Search" %>
-  <% end %>
-</div>
-
+<section class="search">
+  <div class="search_bar">
+    <%= form_tag(@movie, method: "get", class: 'd-flex justify-content-center') do %>
+      <%= text_field_tag :search, params[:search], placeholder: "Search movie", class: 'p-2 align-self-center' %>
+      <%= submit_tag "Search", class: 'p-2 align-self-center' %>
+    <% end %>
+  </div>
+</section>
 
 <section class="movies">
   <div class="movies_section_title">
