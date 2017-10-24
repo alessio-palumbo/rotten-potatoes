@@ -1,4 +1,12 @@
 
+<div class="search align-self-center ">
+  <%= form_tag(@movie, method: "get") do %>
+    <%= text_field_tag :search, params[:search], placeholder: "Search movie" %>
+    <%= submit_tag "Search" %>
+  <% end %>
+</div>
+
+
 <section class="movies">
   <div class="movies_section_title">
     <h2>This Week</h2>
