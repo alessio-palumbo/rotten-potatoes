@@ -1,4 +1,4 @@
-<section class="header_movies">
+<section class="header_movies d-flex justify-content-between">
   <a href="<%= movies_path %>" class="d-flex">
     <div class="header_logo p-2 align-self-center">
       <%= image_tag asset_path('potato.png'), height: 60 %>
@@ -7,6 +7,12 @@
       <h1>Rotten Potatoes</h1>
     </div>
   </a>
+  <div class="search align-self-center">
+    <%= form_tag(@movie, method: "get") do %>
+      <%= text_field_tag :search, params[:search], placeholder: "Search movie" %>
+      <%= submit_tag "Search" %>
+    <% end %>
+  </div>
 </section>
 
 <section class="movies">
@@ -14,7 +20,7 @@
     <h2>This Week</h2>
   </div>
   <div class="movies_list">
-    <%= render @movies %>
+    <%= render @this_week_movies %>
   </div>
 </section>
 
