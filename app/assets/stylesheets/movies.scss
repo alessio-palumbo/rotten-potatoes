@@ -14,15 +14,6 @@ section.header_movies {
   }
 }
 
-// <section class="search">
-// <div class="search align-self-center ">
-//   <%= form_tag(@movie, method: "get") do %>
-//     <%= text_field_tag :search, params[:search], placeholder: "Search movie" %>
-//     <%= submit_tag "Search" %>
-//   <% end %>
-// </div>
-// </section>
-
 section.search {
   div.search_bar {
     form {
@@ -128,6 +119,18 @@ section.movies {
           color: #F2F2F2;
         }
       }
+      div.green_rating {
+        background: #27AE60;
+      }
+      div.orange_rating {
+        background: #F2994A;
+      }
+      div.red_rating {
+        background: #EB5757;
+      }
+      div.no_rating {
+        background: #BDBDBD;
+      }
     }
   }
 }
@@ -193,6 +196,18 @@ section.movie {
           font-weight: bold;
           color: #F2F2F2;
         }
+      }
+      div.green_rating {
+        background: #27AE60;
+      }
+      div.orange_rating {
+        background: #F2994A;
+      }
+      div.red_rating {
+        background: #EB5757;
+      }
+      div.no_rating {
+        background: #BDBDBD;
       }
     }
   }

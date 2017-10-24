@@ -23,7 +23,7 @@
           <p>out of <%= pluralize(@movie.reviews.count, 'Review') %></p>
         </div>
       </div>
-      <div class="potato_review_score p-2">
+      <div class="potato_review_score p-2 <%= colorize_movie_rating(movie_rating @movie) %>">
         <h3><%= movie_rating @movie %></h3>
       </div>
     </div>
@@ -58,7 +58,7 @@
           <p><%= review.comment %></p>
         </div>
       </div>
-      <div class="review_rating p-2 align-self-start">
+      <div class="review_rating p-2 align-self-start <%= colorize_movie_rating(review.rating) %>">
         <h3><%= review.rating %></h3>
       </div>
     </div>

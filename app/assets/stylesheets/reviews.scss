@@ -49,6 +49,18 @@ section.reviews {
         color: #F2F2F2;
       }
     }
+    div.green_rating {
+      background: #27AE60;
+    }
+    div.orange_rating {
+      background: #F2994A;
+    }
+    div.red_rating {
+      background: #EB5757;
+    }
+    div.no_rating {
+      background: #BDBDBD;
+    }
 
   }
 }
