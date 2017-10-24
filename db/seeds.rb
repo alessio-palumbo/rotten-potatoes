@@ -8,14 +8,22 @@ movie3 = Movie.create!(title: 'Blade Runner 2049', description: 'Thirty years af
 movie4 = Movie.create!(title: 'Brigsby bear', description: 'Brigsby Bear Adventures is a children\'s TV show produced for an audience of one: James (Kyle Mooney). When the show abruptly ends, James\' life changes forever, he sets out to finish the story himself and must learn to cope with the realities of a new world that he knows nothing about.', year_released: '2017', genre: 'Comedy', content_rating: 'PG-13')
 movie5 = Movie.create!(title: 'Suburbicon', description: 'Suburbicon is a peaceful, idyllic suburban community with affordable homes and manicured lawns... the perfect place to raise a family, and in the summer of 1959, the Lodge family is doing just that. But the tranquil surface masks a disturbing reality, as husband and father Gardner Lodge (Matt Damon) must navigate the town\'s dark underbelly of betrayal, deceit, and violence. This is a tale of very flawed people making very bad choices. This is Suburbicon.', year_released: '2017', genre: 'Drama', content_rating: 'PG-13')
 
-review1 = Review.create!(rating: 90, comment: 'Awesome movie! I\'d watch it again!', user_id: 1, movie_id: 1)
-review2 = Review.create!(rating: 86, comment: 'Pretty good movie! I would have prefer a different ending, where the protagonist is still alive! OOps!', user_id: 2, movie_id: 1)
-review3 = Review.create!(rating: 32, comment: 'Definitely not my type of movie! I lost 2 hours of my life!', user_id: 3, movie_id: 1)
+Review.create!(rating: 90, comment: 'Awesome movie! I\'d watch it again!', user_id: 1, movie_id: 1)
+Review.create!(rating: 86, comment: 'Pretty good movie! I would have prefer a different ending, where the protagonist is still alive! OOps!', user_id: 2, movie_id: 1)
+Review.create!(rating: 32, comment: 'Definitely not my type of movie! I lost 2 hours of my life!', user_id: 3, movie_id: 1)
 
-review4 = Review.create!(rating: 78, comment: 'Good plot, acting so so, could have been better', user_id: 1, movie_id: 2)
-review5 = Review.create!(rating: 87, comment: 'Great cast, great plot, great movie!', user_id: 2, movie_id: 2)
-review5 = Review.create!(rating: 56, comment: 'Average movie, nothing special, don\'t reccomend', user_id: 3, movie_id: 2)
+Review.create!(rating: 78, comment: 'Good plot, acting so so, could have been better', user_id: 1, movie_id: 2)
+Review.create!(rating: 87, comment: 'Great cast, great plot, great movie!', user_id: 2, movie_id: 2)
+Review.create!(rating: 56, comment: 'Average movie, nothing special, don\'t reccomend', user_id: 3, movie_id: 2)
 
-review5 = Review.create!(rating: 98, comment: 'The best movie I have ever seen!', user_id: 1, movie_id: 3)
-review5 = Review.create!(rating: 76, comment: 'Great, but too long, you\'ll need lots of snacks to get to the end of it!', user_id: 2, movie_id: 3)
-review5 = Review.create!(rating: 84, comment: 'Pretty awesome! I wish there made more movies like this one!', user_id: 3, movie_id: 3)
+Review.create!(rating: 98, comment: 'The best movie I have ever seen!', user_id: 1, movie_id: 3)
+Review.create!(rating: 76, comment: 'Great, but too long, you\'ll need lots of snacks to get to the end of it!', user_id: 2, movie_id: 3)
+Review.create!(rating: 84, comment: 'Pretty awesome! I wish there made more movies like this one!', user_id: 3, movie_id: 3)
+
+Review.create!(rating: 45, comment: 'Very bad!', user_id: 1, movie_id: 4)
+Review.create!(rating: 64, comment: 'Watch something else!', user_id: 2, movie_id: 4)
+Review.create!(rating: 76, comment: 'Average', user_id: 3, movie_id: 4)
+
+Review.create!(rating: 98, comment: 'Awesome, super great, fabulous!!!', user_id: 1, movie_id: 5)
+Review.create!(rating: 99, comment: 'A must watch!', user_id: 2, movie_id: 5)
+Review.create!(rating: 95, comment: 'Absolutely reccomend this movie!', user_id: 3, movie_id: 5)
