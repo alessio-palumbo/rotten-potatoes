@@ -17,21 +17,25 @@
 
   <div class="movie_poster">
     <div class="movie_poster_image">
-      
+
     </div>
   </div>
 
-  <div class="movie_info">
-    <div class="movie_content"><%= @movie.content_rating %> | <%= @movie.genre %></div>
-    <div class="movie_avg_potato_score">
-      <div class="potato_review_label">
-        <h2>Avg Potato Score</h2>
+  <div class="movie_info d-flex justify-content-between">
+    <div class="movie_content p-2">
+      <p><%= @movie.content_rating %> | <%= @movie.genre %></p>
+    </div>
+    <div class="movie_avg_potato_score p-2 d-flex">
+      <div class="potato_review p-2">
+        <div class="potato_review_label">
+          <h2>Avg Potato Score</h2>
+        </div>
+        <div class="potato_review_count">
+          <p>Reviews</p>
+        </div>
       </div>
-      <div class="potato_review_count">
-        <p>Reviews</p>
-      </div>
-      <div class="potato_review_score">
-        <h2><%= movie_rating @movie %></h2>
+      <div class="potato_review_score p-2">
+        <h3><%= movie_rating @movie %></h3>
       </div>
     </div>
   </div>
