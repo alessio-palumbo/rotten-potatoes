@@ -1,24 +1,39 @@
-# README
+### Models
+- User (Devise)
+- Movie
+- Review
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### User
+- username
+- email
+- password
 
-Things you may want to cover:
+#### Movie
+- Title
+- Description
+- Year_released
+- Week_released
+- Genre
 
-* Ruby version
+#### Review
+- Rating
+- Comment
+- User: references
+- Movie: references
 
-* System dependencies
+### ERD
+![alt-text](app/assets/images/erd.png)
 
-* Configuration
+### Trello
+![alt-text](app/assets/images/trello.png)
 
-* Database creation
+### Figma
+![alt-text](app/assets/images/figma.png)
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Features
+## Movies
+- Display This week movie
+- Display all movies
+- Search movies
+- See movie details
+- Rate movie
