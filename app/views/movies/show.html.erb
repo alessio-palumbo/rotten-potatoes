@@ -20,7 +20,7 @@
           <h2>Avg Potato Score</h2>
         </div>
         <div class="potato_review_count">
-          <p>Reviews</p>
+          <p>out of <%= pluralize(@movie.reviews.count, 'Review') %></p>
         </div>
       </div>
       <div class="potato_review_score p-2">
