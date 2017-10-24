@@ -12,7 +12,7 @@
           <p><%= movie.content_rating %></p>
         </div>
         <div class="movie_review_count">
-          <p>Reviews</p>
+          <p><%= pluralize(movie.reviews.count, 'Review') %></p>
         </div>
       </div>
     </div>
