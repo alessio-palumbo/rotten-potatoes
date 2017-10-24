@@ -4,7 +4,13 @@ class MoviesController < ApplicationController
   # GET /movies
   # GET /movies.json
   def index
-    @movies = Movie.all
+    if params[:search]
+      @movies = Movie.search(params[:search])
+    else
+      @movies = Movie.all
+      today = Date.today 
+      @this_week_movies = Movie.where(week_released: today.at_beginning_of_week..today.at_end_of_week)
+    end
   end
 
   # GET /movies/1
