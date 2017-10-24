@@ -1,37 +1,28 @@
-<p id="notice"><%= notice %></p>
+<section class="header_movies">
+  <a href="<%= movies_path %>" class="d-flex">
+    <div class="header_logo p-2 align-self-center">
+      <%= image_tag asset_path('potato.png'), height: 60 %>
+    </div>
+    <div class="header_title p-2 align-self-center">
+      <h1>Rotten Potatoes</h1>
+    </div>
+  </a>
+</section>
 
-<h1>Movies</h1>
+<section class="movies">
+  <div class="movies_section_title">
+    <h2>This Week</h2>
+  </div>
+  <div class="movies_list">
+    <%= render @movies %>
+  </div>
+</section>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Year released</th>
-      <th>Genre</th>
-      <th>Content rating</th>
-      <th>Rating</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @movies.each do |movie| %>
-      <tr>
-        <td><%= movie.title %></td>
-        <td><%= movie.description %></td>
-        <td><%= movie.year_released %></td>
-        <td><%= movie.genre %></td>
-        <td><%= movie.content_rating %></td>
-        <td><%= movie.rating %></td>
-        <td><%= link_to 'Show', movie %></td>
-        <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
-        <td><%= link_to 'Destroy', movie, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Movie', new_movie_path %>
+<section class="movies">
+  <div class="movies_section_title">
+    <h2>All Time</h2>
+  </div>
+  <div class="movies_list">
+    <%= render @movies %>
+  </div>
+</section>

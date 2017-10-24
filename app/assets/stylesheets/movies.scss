@@ -1,3 +1,106 @@
-// Place all the styles related to the Movies controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+section.header_movies {
+  background: #FFC000;
+
+  a {
+    text-decoration: none;
+  }
+  div.header_title {
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      color: #F2F2F2;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+  }
+}
+
+section.movies {
+  div.movies_section_title {
+    height: 50px;
+    background: #333333;
+    text-align: center;
+
+    h2 {
+      padding-top: 10px !important;
+      font-size: 24px;
+      font-weight: bold;
+      color: #F2F2F2;
+    }
+  }
+  div.movies_list {
+    background: #FFC000;
+    
+    a {
+      text-decoration: none;
+    }
+    div.movie_info {
+      padding: 0 !important;
+      margin: 0 !important;
+
+      div.movie_poster {
+        background: #BDBDBD;
+        height: 85px;
+        width: 85px;
+      }
+      div.movie_details {
+        div.movie_title {
+          h3 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #000000;
+          }
+        }
+        div.movie_content_rating {
+          a, p {
+            font-size: 14px;
+            font-weight: bold;
+            color: #F2F2F2;
+          }
+        }
+        div.movie_review_count {
+          a, p {
+            font-size: 14px;
+            font-weight: normal;
+            color: #000000;
+          }
+        } 
+      }
+    }
+
+    div.movie_rating {
+      div.movie_score {
+        height: 50px;
+        width: 50px;
+        background: #27AE60;
+        text-align: center;
+
+        h3 {
+          padding-top: 11px !important;
+          font-size: 24px;
+          font-weight: bold;
+          color: #F2F2F2;
+        }
+      }
+    }
+  }
+}
+
+section.movie {
+  div.movie_title {
+    height: 50px;
+    background: #333333;
+    text-align: center;
+
+    h2 {
+      padding-top: 10px !important;
+      font-size: 24px;
+      font-weight: bold;
+      color: #F2F2F2;
+    }
+    span {
+      font-size: 14px;
+      font-weight: normal;
+      color: #F2F2F2;
+    }
+  }
+}

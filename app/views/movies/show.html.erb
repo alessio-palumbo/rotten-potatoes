@@ -1,4 +1,21 @@
-<p id="notice"><%= notice %></p>
+<section class="header_movies">
+  <a href="<%= movies_path %>" class="d-flex">
+    <div class="header_logo p-2 align-self-center">
+      <%= image_tag asset_path('potato.png'), height: 60 %>
+    </div>
+    <div class="header_title p-2 align-self-center">
+      <h1>Rotten Potatoes</h1>
+    </div>
+  </a>
+</section>
+
+<section class="movie">
+  <div class="movie_title d-flex justify-content-center align-items-end">
+    <h2 class="p-2 align-items-center"><%= @movie.title %></h2>
+    <span class="p-2"><%= @movie.year_released %></span>
+  </div>
+  
+</section>
 
 <p>
   <strong>Title:</strong>
@@ -23,11 +40,6 @@
 <p>
   <strong>Content rating:</strong>
   <%= @movie.content_rating %>
-</p>
-
-<p>
-  <strong>Rating:</strong>
-  <%= @movie.rating %>
 </p>
 
 <%= link_to 'Edit', edit_movie_path(@movie) %> |
