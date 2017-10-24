@@ -6,6 +6,7 @@ class MoviesController < ApplicationController
   def index
     if params[:search]
       @movies = Movie.search(params[:search])
+      render '_search'
     else
       @movies = Movie.all
       today = Date.today 
