@@ -6,7 +6,6 @@ class CreateMovies < ActiveRecord::Migration[5.1]
       t.integer :year_released
       t.string :genre
       t.string :content_rating
-      t.references :review, foreign_key: true
 
       t.timestamps
     end
