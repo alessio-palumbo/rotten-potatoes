@@ -1,3 +1,72 @@
-// Place all the styles related to the Reviews controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+section.reviews {
+  div.reviews_header {
+    height: 50px;
+    background: #333333;
+    text-align: center;
+
+    h2 {
+      padding-top: 10px !important;
+      font-size: 24px;
+      font-weight: bold;
+      color: #F2F2F2;
+    }
+  }
+  
+  div.reviews_nav {
+    height: 45px;
+
+    a {
+      background: #828282;
+      line-height: 14px;
+      font-size: 14px;
+      font-weight: bold;
+      border: 0;
+      border-radius: 15px;
+      min-width: 150px;
+      height: 35px;
+      padding: 10px !important;
+      margin-top: 5px !important;
+      margin-bottom: 5px !important;
+      margin-right: 10px !important;
+    }
+  }
+
+  div.reviews_list {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+
+    div.review_info {
+      div.review_user {
+        p {
+          font-size: 14px;
+          font-weight: bold;
+          color: #333333;
+        }
+      }
+      div.review_comment {
+        p {
+          font-size: 14px;
+          font-weight: normal;
+          color: #333333;
+        }
+      }
+    }
+
+    div.review_rating {
+      min-height: 50px;
+      min-width: 50px;
+      max-height: 50px;
+      max-width: 50px;
+      background: #27AE60;
+      text-align: center;
+
+      h3 {
+        padding-top: 2px !important;
+        font-size: 24px;
+        font-weight: bold;
+        color: #F2F2F2;
+      }
+    }
+
+  }
+}
