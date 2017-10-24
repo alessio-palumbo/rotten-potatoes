@@ -14,33 +14,33 @@
     <h2 class="p-2 align-items-center"><%= @movie.title %></h2>
     <span class="p-2"><%= @movie.year_released %></span>
   </div>
-  
+
+  <div class="movie_poster">
+    <div class="movie_poster_image">
+      
+    </div>
+  </div>
+
+  <div class="movie_info">
+    <div class="movie_content"><%= @movie.content_rating %> | <%= @movie.genre %></div>
+    <div class="movie_avg_potato_score">
+      <div class="potato_review_label">
+        <h2>Avg Potato Score</h2>
+      </div>
+      <div class="potato_review_count">
+        <p>Reviews</p>
+      </div>
+      <div class="potato_review_score">
+        <h2><%= movie_rating @movie %></h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="movie_description">
+    <p><%= @movie.description %></p>
+  </div>
 </section>
 
-<p>
-  <strong>Title:</strong>
-  <%= @movie.title %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @movie.description %>
-</p>
-
-<p>
-  <strong>Year released:</strong>
-  <%= @movie.year_released %>
-</p>
-
-<p>
-  <strong>Genre:</strong>
-  <%= @movie.genre %>
-</p>
-
-<p>
-  <strong>Content rating:</strong>
-  <%= @movie.content_rating %>
-</p>
 
 <% if user_signed_in? %>
   <%= link_to 'Rate', new_movie_review_url(@movie), class: 'btn btn-primary' %> 

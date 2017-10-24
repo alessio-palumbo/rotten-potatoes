@@ -103,4 +103,14 @@ section.movie {
       color: #F2F2F2;
     }
   }
+
+  div.movie_poster {
+    width: 100%;
+    
+    div.movie_poster_image {
+      background: #BDBDBD;
+      width: 95%;
+      height: 200px;
+    }
+  }
 }
