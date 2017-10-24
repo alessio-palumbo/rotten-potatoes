@@ -71,6 +71,20 @@ section.review_form {
   form {
     margin-left: 10px !important;
     margin-right: 10px !important;
+    div.textarea {
+      background: white;
+      height: 200px;
+      width: 100%;
+      border: 0;
+      border-radius: 15px;
+      resize: vertical;
+
+      outline: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      
+    }
     div.field {
       input[type=number] {
         padding: 10px !important;
@@ -86,17 +100,12 @@ section.review_form {
       }
 
       textarea {
+        @extend div.textarea;
         padding: 10px !important;
-        height: 200px;
-        width: 100%;
-        border: 0;
-        border-radius: 15px;
-        resize: vertical;
+      }
 
-        outline: none;
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-        box-shadow: none;
+      grammarly-ghost {
+        visibility: hidden; 
       }
     }
 

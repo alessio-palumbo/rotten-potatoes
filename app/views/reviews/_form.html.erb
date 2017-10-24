@@ -11,10 +11,11 @@
         </ul>
       </div>
     <% end %>
-
-    <div class="field">
-      <%= form.text_area :comment, id: :review_comment, placeholder: 'What did you think about this movie?' %>
-    </div>
+    
+    <div class="textarea">
+      <div class="field">
+        <%= form.text_area :comment, id: :review_comment, placeholder: 'What did you think about this movie?', onclick: 'event.preventDefault();' %>
+      </div>
 
     <div class="field">
       <%= form.number_field :rating, id: :review_rating, placeholder: 'Rating' %>
