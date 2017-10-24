@@ -25,10 +25,7 @@
   <%= @movie.content_rating %>
 </p>
 
-<p>
-  <strong>Rating:</strong>
-  <%= @movie.rating %>
-</p>
 
-<%= link_to 'Edit', edit_movie_path(@movie) %> |
+
+<%= link_to 'Rate', new_movie_review_url(@movie) %> 
 <%= link_to 'Back', movies_path %>
