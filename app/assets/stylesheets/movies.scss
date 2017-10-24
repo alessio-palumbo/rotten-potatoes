@@ -161,4 +161,23 @@ section.movie {
       
     }
   }
+
+  div.reviews_nav {
+    height: 45px;
+
+    a {
+      background: #828282;
+      line-height: 14px;
+      font-size: 14px;
+      font-weight: bold;
+      border: 0;
+      border-radius: 15px;
+      min-width: 150px;
+      height: 35px;
+      padding: 10px !important;
+      margin-top: 5px !important;
+      margin-bottom: 5px !important;
+      // margin-right: 10px !important;
+    }
+  }
 }

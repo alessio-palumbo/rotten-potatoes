@@ -32,19 +32,19 @@
   <div class="movie_description">
     <p><%= @movie.description %></p>
   </div>
-</section>
 
-<section class="reviews">
-  <div class="reviews_header">
-    <h2>Reviews</h2>
-  </div>
-
-  <div class="reviews_nav d-flex justify-content-end">
+  <div class="reviews_nav d-flex justify-content-center">
     <% if user_signed_in? %>
       <%= link_to 'Write a Review', new_movie_review_url(@movie), class: 'btn btn-primary p-2' %> 
     <% else %>
       <%= link_to 'Sign in to Review this movie', new_user_session_url, class: 'btn btn-primary p-2' %>
     <% end %>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="reviews_header">
+    <h2>Reviews</h2>
   </div>
   
   <div class="reviews_list">
