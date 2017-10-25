@@ -1,6 +1,10 @@
 module MoviesHelper
   def movie_rating(movie)
+<<<<<<< HEAD
     movie.reviews.blank? ? '?' : movie.reviews.average(:rating).floor
+=======
+    movie.reviews.blank? ? '?' : movie.reviews.average(:rating).floor #movie.reviews.sum(&:rating) / movie.reviews.count
+>>>>>>> 6c9acc580e13ea877dfbff51dba3100a6ebdd25e
   end
 
   def colorize_movie_rating(rating)
